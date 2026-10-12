@@ -1,0 +1,185 @@
+.dashboard-topbar {
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 32px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8e3db;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.dashboard-search {
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 9px 11px;
+
+    border: 1px solid #e3ddd4;
+    border-radius: 7px;
+
+    background: #fbfaf8;
+
+    color: #918a80;
+}
+
+.dashboard-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #191714;
+
+    font-size: 11px;
+}
+
+.dashboard-search input::placeholder {
+    color: #aaa39a;
+}
+
+.search-shortcut {
+    width: 20px;
+    height: 20px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid #ddd7ce;
+    border-radius: 4px;
+
+    font-size: 10px;
+
+    color: #8d867d;
+}
+
+
+/* =========================
+   RIGHT
+========================= */
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.topbar-create {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 9px 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #191714;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.topbar-create:hover {
+    background: #302d29;
+}
+
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.topbar-icon-button {
+    position: relative;
+
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid #e3ddd4;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #625c54;
+}
+
+.notification-dot {
+    position: absolute;
+
+    top: 7px;
+    right: 7px;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #c89a4b;
+}
+
+
+/* =========================
+   USER
+========================= */
+
+.topbar-user {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding-left: 5px;
+}
+
+.topbar-avatar {
+    width: 34px;
+    height: 34px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #191714;
+    color: #ffffff;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.topbar-user-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.topbar-user-info strong {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.topbar-user-info span {
+    font-size: 8px;
+
+    color: #948d83;
+}

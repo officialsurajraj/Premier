@@ -1,0 +1,296 @@
+/* =================================
+   FEATURES
+================================= */
+
+.features {
+    padding: 120px 0;
+
+    background: #eee8dc;
+}
+
+
+.features-container {
+    width: min(calc(100% - 48px),
+            1180px);
+
+    margin: 0 auto;
+}
+
+
+/* =================================
+   Heading
+================================= */
+
+.features-heading {
+    max-width: 720px;
+
+    margin-bottom: 65px;
+}
+
+
+.features-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #c89a4b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.features-heading h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.features-heading h2 span {
+    color: #8b8274;
+}
+
+
+.features-heading p {
+    max-width: 540px;
+
+    margin-top: 25px;
+
+    color: #6f6a61;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   Grid
+================================= */
+
+.features-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    border-top: 1px solid rgba(27, 25, 22, 0.1);
+
+    border-left: 1px solid rgba(27, 25, 22, 0.1);
+}
+
+
+/* =================================
+   Card
+================================= */
+
+.feature-card {
+    min-height: 300px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-right: 1px solid rgba(27, 25, 22, 0.1);
+
+    border-bottom: 1px solid rgba(27, 25, 22, 0.1);
+
+    background: #f8f5ef;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.feature-card:hover {
+    background: #ffffff;
+
+    transform: translateY(-4px);
+}
+
+
+/* =================================
+   Top
+================================= */
+
+.feature-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.feature-number {
+    color: #c89a4b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.feature-icon {
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 1px solid rgba(27, 25, 22, 0.12);
+
+    border-radius: 50%;
+
+    color: #8b8274;
+
+    font-size: 16px;
+}
+
+
+/* =================================
+   Content
+================================= */
+
+.feature-content {
+    max-width: 280px;
+}
+
+
+.feature-content h3 {
+    margin: 0 0 14px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    line-height: 1.15;
+}
+
+
+.feature-content p {
+    margin: 0;
+
+    color: #6f6a61;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =================================
+   Dark Card
+================================= */
+
+.feature-dark {
+    background: #191714;
+
+    color: #ffffff;
+}
+
+
+.feature-dark:hover {
+    background: #24211d;
+}
+
+
+.feature-dark .feature-number {
+    color: #e7c985;
+}
+
+
+.feature-dark .feature-icon {
+    border-color: rgba(255, 255, 255, 0.18);
+
+    color: #e7c985;
+}
+
+
+.feature-dark .feature-content p {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =================================
+   Tablet
+================================= */
+
+@media (max-width: 900px) {
+
+    .features-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =================================
+   Mobile
+================================= */
+
+@media (max-width: 600px) {
+
+    .features {
+        padding: 80px 0;
+    }
+
+
+    .features-container {
+        width: calc(100% - 32px);
+    }
+
+
+    .features-heading {
+        margin-bottom: 45px;
+    }
+
+
+    .features-heading h2 {
+        font-size: 40px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .feature-card {
+        min-height: 250px;
+
+        padding: 25px;
+    }
+
+}

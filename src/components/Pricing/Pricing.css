@@ -1,0 +1,405 @@
+.pricing {
+    padding: 120px 0;
+
+    background: #f8f5ef;
+    color: #191714;
+}
+
+.pricing-container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.pricing-heading {
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+.pricing-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #a17b3e;
+}
+
+.pricing-heading h2 {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(42px, 4vw, 58px);
+    line-height: 1.08;
+    font-weight: 400;
+
+    letter-spacing: -1.5px;
+}
+
+.pricing-heading h2 span {
+    color: #777168;
+}
+
+.pricing-heading p {
+    margin: 22px auto 0;
+
+    max-width: 500px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #777168;
+}
+
+
+/* =========================
+   PRICING GRID
+========================= */
+
+.pricing-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.pricing-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 35px 30px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4ded5;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(38, 32, 25, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 20px 45px rgba(38, 32, 25, 0.09);
+}
+
+
+/* =========================
+   FEATURED CARD
+========================= */
+
+.pricing-card-featured {
+    background: #191714;
+    color: #ffffff;
+
+    border-color: #191714;
+
+    box-shadow: 0 20px 50px rgba(25, 23, 20, 0.18);
+}
+
+.pricing-card-featured:hover {
+    box-shadow: 0 30px 60px rgba(25, 23, 20, 0.25);
+}
+
+.popular-badge {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    padding: 6px 9px;
+
+    border: 1px solid #8e6b37;
+    border-radius: 20px;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #d5b16f;
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.pricing-plan {
+    display: block;
+
+    margin-bottom: 13px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+
+    color: #a17b3e;
+}
+
+.pricing-card-featured .pricing-plan {
+    color: #d0aa68;
+}
+
+.pricing-card h3 {
+    margin: 0 0 10px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.pricing-card-top p {
+    min-height: 66px;
+
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.65;
+
+    color: #817a71;
+}
+
+.pricing-card-featured .pricing-card-top p {
+    color: #9c968d;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+
+    margin-top: 27px;
+}
+
+.pricing-price strong {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+    font-weight: 400;
+
+    letter-spacing: -1px;
+}
+
+.pricing-price span {
+    font-size: 11px;
+
+    color: #8a837a;
+}
+
+.pricing-card-featured .pricing-price span {
+    color: #8f8980;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.pricing-divider {
+    height: 1px;
+
+    margin: 28px 0 25px;
+
+    background: #e9e4dc;
+}
+
+.pricing-card-featured .pricing-divider {
+    background: #34312d;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.pricing-features {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 13px;
+
+    color: #5f5951;
+}
+
+.pricing-card-featured .pricing-features li {
+    color: #b1aba2;
+}
+
+.pricing-features li span {
+    display: grid;
+    place-items: center;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid #c6a15f;
+    border-radius: 50%;
+
+    color: #a17b3e;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.pricing-card-featured .pricing-features li span {
+    color: #d0aa68;
+    border-color: #8f6e3d;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.pricing-button {
+    width: 100%;
+
+    margin-top: 32px;
+    padding: 13px 20px;
+
+    border: 1px solid #191714;
+    border-radius: 8px;
+
+    background: transparent;
+    color: #191714;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.pricing-button:hover {
+    background: #191714;
+    color: #ffffff;
+}
+
+.featured-button {
+    border-color: #d0aa68;
+
+    background: #d0aa68;
+    color: #191714;
+}
+
+.featured-button:hover {
+    background: #e0bd82;
+    color: #191714;
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.pricing-note {
+    margin: 30px 0 0;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    color: #969087;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+
+        margin: 0 auto;
+    }
+
+    .pricing-card {
+        padding: 30px;
+    }
+
+    .pricing-card-top p {
+        min-height: auto;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .pricing {
+        padding: 80px 0;
+    }
+
+    .pricing-container {
+        width: 88%;
+    }
+
+    .pricing-heading {
+        margin-bottom: 45px;
+    }
+
+    .pricing-heading h2 {
+        font-size: 40px;
+    }
+
+    .pricing-card {
+        padding: 28px 22px 24px;
+    }
+
+    .pricing-price strong {
+        font-size: 36px;
+    }
+}

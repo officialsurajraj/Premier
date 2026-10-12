@@ -1,0 +1,190 @@
+.dashboard-sidebar {
+    width: 240px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    padding: 24px 16px;
+
+    background: #191714;
+    color: #ffffff;
+
+    border-right: 1px solid #2d2925;
+
+    z-index: 50;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.dashboard-sidebar-brand {
+    padding: 4px 10px 30px;
+}
+
+.dashboard-logo {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #ffffff;
+}
+
+.dashboard-logo-mark {
+    width: 30px;
+    height: 30px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid #c89a4b;
+    border-radius: 50%;
+
+    color: #d9b777;
+
+    font-size: 12px;
+}
+
+.dashboard-logo-text {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   NAV
+========================= */
+
+.dashboard-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.dashboard-nav-label {
+    margin: 0 10px 12px;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+
+    color: #716b63;
+}
+
+.dashboard-nav-item {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 42px;
+
+    padding: 0 11px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: #938d84;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.dashboard-nav-item:hover {
+    background: #25221f;
+
+    color: #e8e3dc;
+}
+
+.dashboard-nav-item.active {
+    background: #2c2823;
+
+    color: #ffffff;
+}
+
+.dashboard-nav-item.active svg {
+    color: #d0aa68;
+}
+
+.dashboard-nav-arrow {
+    margin-left: auto;
+
+    color: #d0aa68;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.dashboard-sidebar-bottom {
+    margin-top: auto;
+
+    padding-top: 20px;
+}
+
+.studio-mini-card {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    border: 1px solid #302c27;
+    border-radius: 10px;
+
+    background: #211f1c;
+}
+
+.studio-mini-icon {
+    width: 30px;
+    height: 30px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #d0aa68;
+    color: #191714;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.studio-mini-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.studio-mini-info strong {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.studio-mini-info span {
+    font-size: 9px;
+
+    color: #777169;
+}
